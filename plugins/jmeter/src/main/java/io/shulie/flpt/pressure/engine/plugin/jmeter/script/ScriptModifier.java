@@ -45,7 +45,6 @@ import io.shulie.takin.constants.TakinRequestConstant;
 import org.dom4j.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import redis.clients.jedis.Jedis;
 
 import java.lang.reflect.Field;
 import java.util.*;
