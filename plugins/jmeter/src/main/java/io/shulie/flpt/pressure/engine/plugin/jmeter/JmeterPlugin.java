@@ -291,8 +291,8 @@ public class JmeterPlugin implements PressurePlugin {
             "-j", jmeterLogFilePath, "-Duser.timezone=Asia/Shanghai", "-Djava.net.preferIPv4Stack=true"
                 , "-Djava.net.preferIPv4Addresses=true"
                 , "-Dengine.perssure.mode=" + context.getCurrentEnginePressureMode().getCode(),
-            "-Dpod.number" , podNum, "-DSceneId=" + sceneId, "-DReportId=" + reportId
-            , "-DCustomerId=" + customerId, "-DCallbackUrl=" + context.getCloudCallbackUrl()
+            "-Dpod.number" , podNum, "-DSceneId" , sceneId, "-DReportId" , reportId
+            , "-DCustomerId" , customerId, "-DCallbackUrl=" + context.getCloudCallbackUrl()
             , "-DSamplingInterval=" + traceSampling, portRule};
         //组装后端监听器参数
         args = metricArgsProcess(context, args);
